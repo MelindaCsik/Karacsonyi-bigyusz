@@ -66,3 +66,24 @@ section {
     font-family: 'Hultog Snowdrift', arial;
 
 }
+
+button {
+    display: block;
+    height: 30px;
+    width: 200px;
+    background: linear-gradient(to bottom, rgb(0, 150, 150), rgb(79, 79, 250));
+    color: rgb(10, 6, 230);
+    text-shadow: 1px 1px 4px rgb(31, 28, 136);
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, rgb(79, 79, 250), rgb(0, 150, 150));
+    color: rgb(111, 32, 214);
+    text-shadow: 1px 1px 4px rgb(108, 19, 224); 
+    font-weight: bold;
+}
+
+label {
+    position: relative;
+}
