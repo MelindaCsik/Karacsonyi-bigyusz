@@ -58,9 +58,9 @@ body {
 section {
     padding: 15px;
     display: block;
-    border: 2px solid #ac2121;
-    background-color: #901b2e93;
-    text-shadow: 1px 1px 8px rgb(105, 27, 27);
-    color: rgb(121, 33, 33);
+    border: 2px solid #251a66e8;
+    background-color: #322a618e;
+    text-shadow: 1px 1px 8px rgba(78, 101, 109, 0.664);
+    color:lightblue;
     border-radius: 10px;
 }
