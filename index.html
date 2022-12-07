@@ -12,8 +12,9 @@
 
         function check() {
             let pont = 0
-            var checkBox = document.getElementById("id");
-            if (checkBox.check == "B1") {
+            var checkBox = document.getElementById("1B").checked;
+            if (checkBox == true) {
+                pont =+ 1
                 console.log(pont)
             }
         }
@@ -25,7 +26,7 @@
         <section>
             <p>Mit szimbolizál a fenyőfa karácsonykor?</p>
 
-        <form onsubmit="return(check())">
+        <form onsubmit="return(check(id))">
            <input type="radio" id="1A" name="fenyofa" value="A">
            <label for="1A">A: Egyensúlyt</label><br>
            <input type="radio" id="1B" name="fenyofa" value="B">
