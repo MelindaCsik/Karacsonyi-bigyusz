@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Karácsonyi bigyusz</title>
+    
+    <script>
+        
+
+        function check() {
+            let pont = 0
+            var checkBox = document.getElementById("id");
+            if (checkBox.check == "B1") {
+                console.log(pont)
+            }
+        }
+
+        </script>
 </head>
 <body>
     <div class="snow">
         <section>
             <p>Mit szimbolizál a fenyőfa karácsonykor?</p>
 
-        <form>
+        <form onsubmit="return(check())">
            <input type="radio" id="1A" name="fenyofa" value="A">
            <label for="1A">A: Egyensúlyt</label><br>
            <input type="radio" id="1B" name="fenyofa" value="B">
@@ -46,7 +59,7 @@
          </form> <br><br>
 
 
-           <p>Melyik évben jelent meg Mariah Carey All i Want for Christmas is You című száma?</p>
+        <p>Melyik évben jelent meg Mariah Carey All I Want for Christmas is You című száma?</p>
 
         <form>
            <input type="radio" id="4A" name="zene" value="A">
@@ -73,14 +86,6 @@
 
         </section>
     </div>
-    <script>
-        function check()
-            let pont = 0
-            var checkBox = document.getElementById("1B")
-            if (checkBox.checked == true) {
-                console.count(pont)
-            }
-
-    </script>
+    
 </body>
 </html>
