@@ -8,17 +8,47 @@
     <title>Karácsonyi bigyusz</title>
     
     <script>
-        
+        let pont = 0
 
-        function check() {
-            let pont = 0
-            var checkBox = document.getElementById("1B").checked;
-            if (checkBox == true) {
+        function check1() {
+            var checkBox1 = document.getElementById("1B").checked;
+            if (checkBox1 == true) {
+                pont =+ 1
+                console.log(pont)
+                return pont
+            }
+        }
+        function check2() {
+            var checkBox2 = document.getElementById("2C").checked;
+            if (checkBox2 == true) {
                 pont =+ 1
                 console.log(pont)
             }
         }
 
+        function check3() {
+            var checkBox3 = document.getElementById("3A").checked;
+            if (checkBox3 == true) {
+                pont =+ 1
+                console.log(pont)
+            }
+        }
+
+        function check4() {
+            var checkBox4 = document.getElementById("4A").checked;
+            if (checkBox4 == true) {
+                pont =+ 1
+                console.log(pont)
+            }
+        }
+
+        function check5() {
+            var checkBox5 = document.getElementById("5B").checked;
+            if (checkBox5 == true) {
+                pont =+ 1
+                console.log(pont)
+            }
+        }
         </script>
 </head>
 <body>
@@ -26,7 +56,7 @@
         <section>
             <p>Mit szimbolizál a fenyőfa karácsonykor?</p>
 
-        <form onsubmit="return(check(id))">
+        <form onsubmit="return(check1(id))">
            <input type="radio" id="1A" name="fenyofa" value="A">
            <label for="1A">A: Egyensúlyt</label><br>
            <input type="radio" id="1B" name="fenyofa" value="B">
@@ -38,7 +68,7 @@
         
             <p>Mikor van karácsony?</p>
 
-        <form>
+        <form onsubmit="return(check2(id))">
            <input type="radio" id="2A" name="mikor" value="A">
            <label for="2A">A: December 24-től 26-ig</label><br>
            <input type="radio" id="2B" name="mikor" value="B">
@@ -50,7 +80,7 @@
 
            <p>Miért ilyenkor ünnepeljük a karácsonyt? </p>
 
-         <form>
+         <form onsubmit="return(check3(id))">
            <input type="radio" id="3A" name="miert" value="A">
            <label for="3A">A: Ekkor született Jézus</label><br>
            <input type="radio" id="3B" name="miert" value="B">
@@ -62,7 +92,7 @@
 
         <p>Melyik évben jelent meg Mariah Carey All I Want for Christmas is You című száma?</p>
 
-        <form>
+        <form onsubmit="return(check4(id))">
            <input type="radio" id="4A" name="zene" value="A">
            <label for="4A">A: 1994</label><br>
            <input type="radio" id="4B" name="zene" value="B">
@@ -74,7 +104,7 @@
 
          <p>Az alábbi felsorolt dolgok közül melyik NEM jellemző a karácsonyra?</p>
 
-         <form>
+         <form onsubmit="return(check5(id))">
            <input type="radio" id="5A" name="jellemzo" value="A">
            <label for="5A">A: A szeretteink megajándékozása</label><br>
            <input type="radio" id="5B" name="jellemzo" value="B">
@@ -83,7 +113,7 @@
            <label for="5C">C: Karácsonyfa díszítés</label>
         </form> <br><br><br>
 
-        <button onclick="check()">Kiértékelés</button>
+        <button onclick="check1(), check2(), check3(), check4(), check5()">Kiértékelés</button>
 
         </section>
     </div>
