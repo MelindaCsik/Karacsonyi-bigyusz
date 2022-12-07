@@ -64,6 +64,7 @@ section {
     color:lightblue;
     border-radius: 10px;
     font-family: 'Hultog Snowdrift', arial;
+    margin: auto auto 10px auto;
 
 }
 
@@ -97,7 +98,6 @@ label {
     color:lightblue;
     border-radius: 10px;
     font-family: 'Hultog Snowdrift', arial;
-
 }
 
 #bad {
@@ -109,5 +109,4 @@ label {
     color:lightblue;
     border-radius: 10px;
     font-family: 'Hultog Snowdrift', arial;
-
 }
