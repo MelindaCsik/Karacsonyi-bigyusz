@@ -10,7 +10,10 @@
 
     <script>
         function check() {
+            let hamise = false
             let pont = 0
+            var good1 = document.getElementById("good");
+            var bad1 = document.getElementById("bad");
             let helyesValasz = ["1B", "2C", "3A", "4A", "5B", "6C", "7B"]
             for (let i = 0; i < helyesValasz.length; i++) {
                 let elem = document.getElementById(helyesValasz[i]);
@@ -19,6 +22,14 @@
                 }
             }
             console.log(pont)
+            if (pont == 7) {
+                hamise = true
+            }
+            if (hamise == true) {
+                good1.style.display = "block";
+            } else {
+                bad.style.display = "block";
+            }
         }
 
     </script>
@@ -114,6 +125,8 @@
 
         </section>
     </div>
+    <p id="good" style="display:none">Gratulálunk maximális pontszám!<br>Boldog karácsonyt!</p>
+    <p id="bad" style="display:none">Gratulálunk elhullottál!<br>Próbáld újra!</p>
 
 </body>
 
